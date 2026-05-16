@@ -10,12 +10,14 @@ This repository hosts release binaries — the source code lives elsewhere.
 
 | | |
 |---|---|
-| **Latest release** | [v1.59](https://github.com/JacquelynneHahn/Labyrinth-AllureOfStone/releases/latest) |
-| **APK** | [app-debug.apk](https://github.com/JacquelynneHahn/Labyrinth-AllureOfStone/releases/latest/download/app-debug.apk) (~1.4 GB) |
+| **Latest release** | [v1.64](https://github.com/JacquelynneHahn/Labyrinth-AllureOfStone/releases/latest) |
+| **APK** | [app-debug.apk](https://github.com/JacquelynneHahn/Labyrinth-AllureOfStone/releases/latest/download/app-debug.apk) (~18 MB) |
 | **Manifest** | [latest.json](https://github.com/JacquelynneHahn/Labyrinth-AllureOfStone/releases/latest/download/latest.json) |
 
-Wi-Fi is strongly recommended for the first install — the audio narration
-is bundled (~1.2 GB on its own).
+The APK itself is small. On first launch the app downloads the story
+content — about 1.2 GB of prose, art, and audio narration — directly
+from this repo. **Wi-Fi is strongly recommended** for that first-launch
+download. After it's done the app works fully offline.
 
 ## Install on Android
 
@@ -25,9 +27,11 @@ is bundled (~1.2 GB on its own).
    for whichever app you used to open the APK (your browser or file
    manager).
 3. Tap **Install**, wait a moment, then **Open**.
-
-The app will land on a profile picker — pick a slot, then tap into the
-book.
+4. The app will show a one-time setup screen and download the story
+   bundles (~1.2 GB). Leave it on Wi-Fi for ~10-15 minutes; you can
+   navigate away and come back when it's done.
+5. After setup completes, the app lands on a profile picker — pick a
+   slot, then tap into the book.
 
 ## Self-updates
 
@@ -40,6 +44,10 @@ standard install prompt.
 To check manually any time: open the chapter selector at the top of the
 reader → scroll to the bottom of the dropdown → tap
 **v1.x • Check for updates**.
+
+Updates are modular — the story-data, image, and audio bundles are
+versioned independently, so a release that only adjusts prose doesn't
+force a re-download of the 700 MB audio bundle.
 
 ## What's inside the app
 
@@ -80,3 +88,4 @@ feedback goes through personal channels.
 ---
 
 *Personal project — please don't redistribute without permission.*
+
